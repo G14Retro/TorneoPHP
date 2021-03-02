@@ -1,0 +1,20 @@
+#bodyLogin {
+    background: url(../img/login3.jfif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-section{
+    margin: 0 auto;
+    margin-top: 25%;
+    padding: 0;
+}
+
+.modal-content{
+    opacity: .85;
+    padding: 0;
+}
+
+#bodyRegistro{
+    background: url(../img/registro.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
