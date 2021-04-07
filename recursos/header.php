@@ -12,3 +12,4 @@
     <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
     <script src="../js/jquery-3.6.0.min.js"></script>
 </head>
+<body>

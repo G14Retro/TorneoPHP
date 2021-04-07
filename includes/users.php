@@ -11,7 +11,14 @@
     $json = array();
 
     while ($row = mysqli_fetch_array($result)) {
+        if ($row['estado'] == 'a') {
+            $row['estado'] = 'activo';
+        }
+        if ($row['estado']== 'i') {
+            $row['estado'] = 'inactivo';
+        }
         $json[] = array(
+            'id' => $row['idjugadores'],
             'nombre' => $row['nombre'],
             'apellido' => $row['apellido'],
             'correo' => $row['correo'],
