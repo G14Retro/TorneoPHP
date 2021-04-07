@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "animate.css": "^4.1.1"
+  }
+}

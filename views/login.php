@@ -3,7 +3,7 @@
 ?>
 
 <?php
-    include_once('../recursos/header.php');
+    include('../recursos/header.php');
 ?>
 <body id="bodyLogin">
 <div class="modal-dialog text-center">
@@ -17,7 +17,7 @@
         <div class="modal-content bg-transparent">         
           <form class="col-12" action="../includes/loguear.php" method="POST">
             <?php if (isset($_SESSION['mensaje'])) { ?>
-              <div class="alert alert-<?= $_SESSION['tipo_mensaje']?> alert-dismissible fade show" role="alert">
+              <div class="alert alert-<?= $_SESSION['tipo_mensaje']?>" role="alert">
               <?= $_SESSION['mensaje']?>
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -48,7 +48,6 @@
         </div>
     </div>
 </div>
-</body>
 <?php
-    include_once('../recursos/footer.php');
+    include('../recursos/footer.php');
 ?>
