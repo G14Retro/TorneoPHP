@@ -60,16 +60,15 @@
       <label>Estado</label>
       <label for="estado">Estado</label>
       <select class="form-control" id="estado">
-        <option>Activo</option>
-        <option>Inactivo</option>
+        <option value="a">Activo</option>
+        <option value="i">Inactivo</option>
       </select>
     </div>
     <div class="form-group col-md-6">
-      <label>Tipo de usuario</label>
-      <label for="estado">Estado</label>
-      <select class="form-control" id="estado">
-        <option>Administrador</option>
-        <option>Jugador</option>
+      <label for="tipo_usuario">Tipo de usuario</label>
+      <select class="form-control" id="tipo_usuario">
+        <option value="1">Administrador</option>
+        <option value="2">Jugador</option>
       </select>
     </div>
   </div>
