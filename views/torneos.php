@@ -25,8 +25,49 @@
       <a class="nav-link" href="../views/login.php">Cerrar sesión</a>
   </div>
 </nav>
-<h1>Hola Torneo</h1>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <form id="form-torneo">
+            <div class="form-group">
+            <input type="hidden" id="id-partida">
+              <div class="div">
+                <label>Nombre de la partida</label></div>
+              <div>
+                <input type="text" id="partida" required></div>
+              </div>
+            <div class="form-group">
+              <div>
+                <label>Fecha del evento</label>
+              </div>
+              <div>
+                <input type="datetime-local" id="partida-fecha" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success" id="event-add">Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+    <table class="table table-dark animate__fadeIn">
+      <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre de la partida</th>
+            <th scope="col">Fecha</th>
+        </tr>
+      </thead>
+      <tbody id="partidas">
+      </tbody>
+    </table>
+  </div>
+  </div>
+</div>
+<script src="../js/torneo.js"></script>
 <?php
     include_once('../recursos/footer.php');
 ?>

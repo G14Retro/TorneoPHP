@@ -25,6 +25,7 @@
       <a class="nav-link" href="../views/login.php">Cerrar sesión</a>
   </div>
 </nav>
+
 <div class="container p-3">
 <table class="table table-dark animate__fadeIn">
   <thead>

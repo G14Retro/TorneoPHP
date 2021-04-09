@@ -30,7 +30,7 @@
               </div>
                 <input type="mail" class="form-control" placeholder="Ingrese su correo" 
                 aria-label="Ingrese su correo" name="correo" id="correo"
-                aria-describedby="addon-wrapping" autofocus>
+                aria-describedby="addon-wrapping" autofocus required>
             </div>
             <br>
             <div class="input-group flex-nowrap">
@@ -39,7 +39,7 @@
               </div>
                 <input type="password" class="form-control" placeholder="Ingrese su Contraseña" 
                 aria-label="Ingrese su Contraseña" name="clave" id="clave"
-                aria-describedby="addon-wrapping">  
+                aria-describedby="addon-wrapping" required>  
             </div>
             <br>
                 <button type="submit" name="ingresar" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>

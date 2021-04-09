@@ -25,7 +25,7 @@
                         <div class="col">
                             <label class="form-label">Número de Identificación</label>
                             <input type="text" class="form-control" name="documento" id="documento"
-                            placeholder="Ingrese su Numero de Identifiación">
+                            placeholder="Ingrese su Numero de Identifiación" require>
                         </div>
                     </div>
                     <div class="row">
@@ -75,8 +75,12 @@
                         </div>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary" name="registrarse">Registrarse</button>
-                    <button type="submit" class="btn btn-danger" name="regresar">Regresar</button>
+                    <div class="container">
+                        <div class="abs-center">
+                        <button type="submit" class="btn btn-primary" name="registrarse">Registrarse</button>
+                        <button type="submit" class="btn btn-danger" name="regresar">Regresar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

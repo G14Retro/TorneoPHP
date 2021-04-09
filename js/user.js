@@ -58,7 +58,6 @@ $(document).ready(function(){
             tipo_usuario: $('#tipo_usuario').val(),
             type: "edit"
         }
-        console.log(data.estado);
         $.post('../includes/user-edit.php',data,function(response){
             alert(response);
             $('#userForm').hide();
