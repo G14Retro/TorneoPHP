@@ -4,7 +4,7 @@
     $result = mysqli_query($conexion,$query);
 
     if (!$result) {
-        die('Fallo de consulta ' . mysqli_error());
+        die('Fallo de consulta ' . mysqli_error($conexion));
     }
 
     $json = array();

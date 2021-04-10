@@ -3,7 +3,7 @@
     $query = "SELECT idjugadores, nickname from personas WHERE tipo_usuario = 2 AND estado = 'a'";
     $result = mysqli_query($conexion,$query);
     if (!$result) {
-        die ("Falla en la consulta " . mysqli_error());
+        die ("Falla en la consulta " . mysqli_error($conexion));
     }
     $json = array();
     while ($row = mysqli_fetch_array($result)) {

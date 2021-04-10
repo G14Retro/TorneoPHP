@@ -17,7 +17,8 @@ if (isset($_POST['registrarse'])) {
 
     $result = mysqli_query($conexion,$query);
     if (!$result) {
-        echo $result;
+       echo $result;
+       header('Location: ../views/registro.php');
        die("Fallo el query");
     }
 

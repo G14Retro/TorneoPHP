@@ -10,75 +10,78 @@
                 <h4 class="informacion">Información de Registro</h4>
             </div>
             <div class="contenedor modal-content text-danger">
-                <form class="col-12" action="../includes/registrar.php" method="POST">
+                <form class="col-12" action="../includes/registrar.php" method="POST" id="formRegistro">
                     <div class="row">
                         <div class="col">
                             <label class="form-label" form="tipo_documento">Tipo de Documento</label>
                             <select id="tipo_documento" class="form-control" name="tipo_documento">
-                                <option value="index" selected>Seleccione una opción</option>
-                                <option value="cc" selected>Cedula de Ciudadanía</option>
-                                <option value="ce" selected>Cedula de Extrangería</option>
-                                <option value="ti" selected>Tarjeta de Identidad</option>
-                                <option value="pp" selected>Pasaporte</option>
+                                <option >Seleccione una opción</option>
+                                <option value="cc">Cedula de Ciudadanía</option>
+                                <option value="ce">Cedula de Extrangería</option>
+                                <option value="ti">Tarjeta de Identidad</option>
+                                <option value="pp">Pasaporte</option>
                             </select>
                         </div>
                         <div class="col">
                             <label class="form-label">Número de Identificación</label>
                             <input type="text" class="form-control" name="documento" id="documento"
-                            placeholder="Ingrese su Numero de Identifiación" require>
+                            placeholder="Ingrese su Numero de Identifiación" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label class="form-label">Nombres</label>
                             <input type="text" class="form-control" placeholder="Ingrese sus Nombres"
-                            name="nombre" id="nombre">
+                            name="nombre" id="nombre" required>
                         </div>
                         <div class="col">
                             <label class="form-label">Apellidos</label>
                             <input type="text" class="form-control" placeholder="Ingrese sus Apellidos"
-                            name="apellido" id="apellido">
+                            name="apellido" id="apellido" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label class="form-label">Fecha de Nacimiento</label>
                             <input type="date" class="form-control"
-                            name="fecha_nacimiento" id="fecha_nacimiento">
+                            name="fecha_nacimiento" id="fecha_nacimiento" required>
                         </div>
                         <div class="col">
                             <label class="form-label">NickName</label>
                             <input type="text" class="form-control" placeholder="Ingrese su NickName de Juego"
-                            name="nickname" id="nickname">
+                            name="nickname" id="nickname" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label class="form-label">Correo</label>
                             <input type="mail" class="form-control" placeholder="Ingrese un Correo Electronico"
-                            name="correo" id="correo">
+                            name="correo" id="correo" required>
                         </div>
                         <div class="col">
                             <label class="form-label">Confirmar Correo</label>
-                            <input type="mail" class="form-control" placeholder="Confirme su Correo Electronico">
+                            <input type="mail" class="form-control" placeholder="Confirme su Correo Electronico"
+                            required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label class="form-label">Contraseña</label>
                             <input type="password" class="form-control" placeholder="Ingrese una Contraseña"
-                            name="clave" id="clave">
+                            name="clave" id="clave"
+                            required>
                         </div>
                         <div class="col">
                             <label class="form-label">Confirmar Contraseña</label>
-                            <input type="password" class="form-control" placeholder="Confirme su Contraseña">
+                            <input type="password" class="form-control" placeholder="Confirme su Contraseña"
+                            required>
                         </div>
                     </div>
                     <br>
                     <div class="botones">
                         <div class="abs-center">
                         <button type="submit" class="boton1 btn btn-warning font-weight-bold" name="registrarse">Registrarse</button>
-                        <button type="submit" class="boton2 btn btn-outline-secondary text-dark font-weight-bold" name="regresar">Regresar</button>
+                        <a href="login.php" class="boton2 btn btn-outline-secondary text-dark font-weight-bold" >Regresar</a>
                         </div>
                     </div>
                 </form>

@@ -37,14 +37,14 @@
               <div class="float-md-left">
                 <label>Nombre de la partida</label></div>
               <div>
-                <input type="text" id="partida" required></div>
+                <input class="form-control" type="text" id="partida" required></div>
               </div>
             <div class="form-group">
               <div>
                 <label>Fecha del evento</label>
               </div>
               <div>
-                <input type="datetime-local" id="partida-fecha" required>
+                <input class="form-control" type="datetime-local" id="partida-fecha" required>
               </div>
             </div>
             <button type="submit" class="btn btn-warning text-dark font-weight-bold" id="event-add">Guardar</button>
