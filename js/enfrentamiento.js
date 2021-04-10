@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    let idEnfrentamiento = location.search.substr(4);
+    let editar = false;
+    let idPartida = location.search.substr(4);
     obtenerJugadores();
     obtenerPersonaje();
     obtenerEnfrentamientos();
@@ -29,7 +30,7 @@ $(document).ready(function(){
                 personajes.forEach(personaje => {
                     $('#personaje').append("<option value='"+personaje.id+"'>"+personaje.nombre+"</option>"); 
                 });
-                $('#personaje').select2();
+                
             }
         })
     }
@@ -63,7 +64,7 @@ $(document).ready(function(){
 
     function obtenerEnfrentamientos() {
         const data = {
-            id: idEnfrentamiento,
+            id: idPartida,
             type: 'enfrentamientos'
         }
         $.post('../includes/enfrentamiento.php',data,function(response){
@@ -100,14 +101,38 @@ $(document).ready(function(){
             $.post('../includes/enfrentamiento.php',data,function(response){
                 const enfrentamiento = JSON.parse(response);
                 $('#enfrentamientoId').val(enfrentamiento[0].id);
-                $('#nombre').val(enfrentamiento[0].nombre);
-                $('#apellido').val(enfrentamiento[0].apellido);
-                $('#correo').val(enfrentamiento[0].correo);
-                $('#estado').val(enfrentamiento[0].estado);
-                $('#tipo_usuario').val(enfrentamiento[0].tipo_usuario);
-                $('#userForm').show();
+                $('#jugador').val(enfrentamiento[0].jugador);
+                $('#personaje').val(enfrentamiento[0].personaje);
+                obtenerOponente();
+                $('#oponente').val(enfrentamiento[0].oponente);
+                $('#ronda').val(enfrentamiento[0].ronda);
+                $('#combate').val(enfrentamiento[0].combate);
+                $('#resultado').val(enfrentamiento[0].resultado);
+                editar = true;
             })
         }
+    })
+
+    $('#enfrentamiento-form').submit(function(e){
+        let tipo = editar === false ? 'agregar': 'editar';
+        const data = {
+            id: $('#enfrentamientoId').val(),
+            idPartida: idPartida,
+            jugador: $('#jugador').val(),
+            personaje: $('#personaje').val(),
+            oponente: $('#oponente').val(),
+            ronda: $('#ronda').val(),
+            combate: $('#combate').val(),
+            resultado: $('#resultado').val(),
+            type: tipo
+        }
+
+        $.post('../includes/enfrentamiento.php',data,function(response){
+            console.log(response);
+            $('#enfrentamiento-form').trigger('reset');
+            obtenerEnfrentamientos();
+        })
+        e.preventDefault();
     })
 
 });
