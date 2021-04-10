@@ -25,9 +25,25 @@
       <a class="nav-link" href="../views/login.php">Cerrar sesión</a>
   </div>
 </nav>
-<div class="container" id="contenido">
-<h1>Hola Admin</h1>
-</div>
+
+<body id="bodyRegistro">
+    <div class="model-dialog">
+        <div class="col-md-6 main-section mt-5">
+            <div class=" modal-header bg-dark">
+                <h2 class="informacion">Bienvenido Administrador</h2>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="contenedorAdmin  ">
+      <form class="col-12 w-50 mr-md-3 ">
+        <div class="botonesAdmin">
+            <a class="btn btn-warning font-weight-bold " href="torneos.php">Torneo</a>
+            <a class="btn btn-outline-secondary text-dark font-weight-bold" href="usuarios.php">Usuario</a>
+        </div>
+      </form>
+    </div>
+</body>
 <?php
     include_once('../recursos/footer.php');
 ?>

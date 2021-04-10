@@ -46,7 +46,7 @@
             </div>
             <br>
                 <button type="submit" name="ingresar" class="btn btn-warning font-weight-bold"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
-                <a class="btn btn-outline-" href="registro.php">Registrarse</a>
+                <a class="btn btn-outline-warning" href="registro.php">Registrarse</a>
           </form>
         </div>
     </div>

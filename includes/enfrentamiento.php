@@ -10,7 +10,7 @@
                 AND estado = 'a' AND tipo_usuario=2";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die("Falla en la consulta " . mysqli_error());
+                    die("Falla en la consulta " . mysqli_error() );
                 }
                 $json = array();
                 while ($row = mysqli_fetch_array($result)) {
