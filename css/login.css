@@ -5,16 +5,54 @@
 
 .main-section{
     margin: 0 auto;
-    margin-top: 25%;
-    padding: 0;
+    margin-top: 9%;
+
+    border-radius: 9px;
 }
 
 .modal-content{
-    opacity: .85;
+    opacity: .9;
     padding: 0;
+    margin-bottom: 16px;
 }
 
 #bodyRegistro{
     background: url(../img/registro.jpg) no-repeat center center fixed;
     background-size: cover;
+}
+
+.text-sesion{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(196, 160, 0);
+}
+
+/*ESTILOS REGISTRO*/
+/********* Estilos Registro *********/
+.contenedor{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.673);
+    border-radius: 0 0 11px 11px;
+    padding-top:11px;
+
+}
+.contenedor-filas{
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.botones{
+    padding-left:31%;
+    padding-bottom: 9px;
+}
+
+.form-label{
+    font-weight: 400;
+    color:crimson;
+}
+.informacion{
+    color: whitesmoke;
+    margin-left: 19%;
+    font-size: 33px;
 }

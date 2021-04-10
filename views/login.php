@@ -7,13 +7,16 @@
 ?>
 <body id="bodyLogin">
 <div class="modal-dialog text-center">
+
+    <div class="contenedor-sesion">
+      <h4 class="text-sesion">Inicio de Sesión</h4>
+    </div>
+
     <div class="col-sm-9 main-section">
         <div class="modal-content">
           <img src="../img/login.jpg">
         </div>
-        <div class="rounded-pill bg-primary">
-          <h4 class="h4 text-white">Inicio de Sesión</h5>
-        </div>
+        
         <div class="modal-content bg-transparent">         
           <form class="col-12" action="../includes/loguear.php" method="POST">
             <?php if (isset($_SESSION['mensaje'])) { ?>
@@ -26,7 +29,7 @@
             <?php session_unset(); }  ?>
             <div class="input-group flex-nowrap">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="addon-wrapping">Correo</span>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-envelope"></i></span>
               </div>
                 <input type="mail" class="form-control" placeholder="Ingrese su correo" 
                 aria-label="Ingrese su correo" name="correo" id="correo"
@@ -35,15 +38,17 @@
             <br>
             <div class="input-group flex-nowrap">
               <div class="input-group-prepend m-0">
-                <span class="input-group-text" id="addon-wrapping">Contraseña</span>
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-lock"></i></span>
               </div>
                 <input type="password" class="form-control" placeholder="Ingrese su Contraseña" 
                 aria-label="Ingrese su Contraseña" name="clave" id="clave"
                 aria-describedby="addon-wrapping" required>  
             </div>
             <br>
-                <button type="submit" name="ingresar" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
-                <button type="submit" name="registrarse" class="btn btn-primary">Registrarse</button>
+
+                <button type="submit" name="ingresar" class="btn btn-warning"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+                <a class="btn btn-outline-warning" href="registro.php">Registrarse</a>
+
           </form>
         </div>
     </div>
@@ -51,3 +56,5 @@
 <?php
     include('../recursos/footer.php');
 ?>
+
+

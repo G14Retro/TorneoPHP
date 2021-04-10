@@ -6,10 +6,10 @@
 <body id="bodyRegistro">
     <div class="model-dialog">
         <div class="col-md-6 main-section mt-5">
-            <div class="modal-header bg-dark text-center">
-                <h4 class="text-white">Información de Registro</h4>
+            <div class=" modal-header bg-dark">
+                <h4 class="informacion">Información de Registro</h4>
             </div>
-            <div class="modal-content text-danger">
+            <div class="contenedor modal-content text-danger">
                 <form class="col-12" action="../includes/registrar.php" method="POST">
                     <div class="row">
                         <div class="col">
@@ -75,10 +75,10 @@
                         </div>
                     </div>
                     <br>
-                    <div class="container">
+                    <div class="botones">
                         <div class="abs-center">
-                        <button type="submit" class="btn btn-primary" name="registrarse">Registrarse</button>
-                        <button type="submit" class="btn btn-danger" name="regresar">Regresar</button>
+                        <button type="submit" class="boton1 btn btn-primary" name="registrarse">Registrarse</button>
+                        <button type="submit" class="boton2 btn btn-success" name="regresar">Regresar</button>
                         </div>
                     </div>
                 </form>
