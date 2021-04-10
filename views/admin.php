@@ -26,9 +26,7 @@
   </div>
 </nav>
 <div class="container" id="contenido">
-<?php
-    include_once('../views/home.php');
-?>
+<h1>Hola Admin</h1>
 </div>
 <?php
     include_once('../recursos/footer.php');

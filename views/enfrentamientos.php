@@ -27,34 +27,64 @@
   </div>
 </nav>
 
-<div class="container bg-dark text-light">
+<div class="container text-light">
     <div class="row">
-        <div class="col-md-12">
-            <form id="enfrentamiento-form" class="form-inline">
+        <div class="col-md-5 bg-dark">
+            <form id="enfrentamiento-form" class="form-col">
+            <h3>Información del enfrentamiento</h3>
+            <input type="hidden" id="enfrentamientoId">
+            <div>
                 <label class="my-1 mr-2" for="jugador">Jugador</label>
                     <select class="custom-select my-1 mr-sm-2" id="jugador">
                         <option>Seleccionar</option>
                     </select>
+            </div>
                 <label class="my-1 mr-2" for="personaje">Personaje</label>
                     <select class="custom-select my-1 mr-sm-2" id="personaje">
                         <option>Seleccionar</option>
                     </select>
+            <div>
+            </div>
+            <div>
                 <label class="my-1 mr-2" for="oponente">Oponente</label>
                     <select class="custom-select my-1 mr-sm-2" id="oponente">
                         <option>Seleccionar</option>
                     </select>
+            </div>
+            <div>
                 <label class="my-1 mr-2" for="ronda">Ronda</label>
                     <input type="number" class="form-control mb-2 mr-sm-2" id="ronda" placeholder="Ingrese el número de ronda">
+            </div>
+            <div>
                 <label class="my-1 mr-2" for="combate">Combates</label>
                     <input type="number" class="form-control mb-2 mr-sm-2" id="combate" placeholder="Ingrese el número de ronda">
+            </div>
+            <div>
                 <label class="my-1 mr-2" for="resultado">Resultado</label>
                     <select class="custom-select my-1 mr-sm-2" id="resultado">
                         <option>Seleccionar</option>
                     </select> 
-                <div>
-                <button type="submit" class="btn btn-primary mb-2" id="guardar">Guardar</button>
+            </div>
+                <div class="float-right">
+                <button type="submit" class="btn btn-success mb-2" id="guardar">Guardar</button>
                 </div>
             </form>
+        </div>
+        <div class="col-md-7">
+        <table class="table table-dark animate__fadeIn">
+            <thead>
+                <tr>
+                    <th scope="col">Jugador</th>
+                    <th scope="col">Personaje</th>
+                    <th scope="col">Oponente</th>
+                    <th scope="col">Ronda</th>
+                    <th scope="col">Combate</th>
+                    <th scope="col">Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="partidas">
+            </tbody>
+            </table>
         </div>
     </div>
 </div>
