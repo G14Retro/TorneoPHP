@@ -77,8 +77,8 @@
                     <br>
                     <div class="botones">
                         <div class="abs-center">
-                        <button type="submit" class="boton1 btn btn-primary" name="registrarse">Registrarse</button>
-                        <button type="submit" class="boton2 btn btn-success" name="regresar">Regresar</button>
+                        <button type="submit" class="boton1 btn btn-warning font-weight-bold" name="registrarse">Registrarse</button>
+                        <button type="submit" class="boton2 btn btn-outline-secondary text-dark font-weight-bold" name="regresar">Regresar</button>
                         </div>
                     </div>
                 </form>

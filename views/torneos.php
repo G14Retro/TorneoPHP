@@ -28,13 +28,13 @@
 
 <div class="container">
   <div class="row p-5">
-    <div class="col-md-4">
+    <div class="col-md-4 ">
       <div class="card">
         <div class="card-body">
           <form id="form-torneo">
-            <div class="form-group">
+            <div class="form-group ">
             <input type="hidden" id="id-partida">
-              <div class="div">
+              <div class="float-md-left">
                 <label>Nombre de la partida</label></div>
               <div>
                 <input type="text" id="partida" required></div>
@@ -47,13 +47,13 @@
                 <input type="datetime-local" id="partida-fecha" required>
               </div>
             </div>
-            <button type="submit" class="btn btn-success" id="event-add">Guardar</button>
+            <button type="submit" class="btn btn-warning text-dark font-weight-bold" id="event-add">Guardar</button>
           </form>
         </div>
       </div>
     </div>
-    <div class="col-md-8">
-    <table class="table table-dark animate__fadeIn">
+    <div class="col-lg-8">
+    <table class="table table-dark  table table-striped table-dark">
       <thead>
         <tr>
             <th scope="col">Id</th>
@@ -67,6 +67,66 @@
   </div>
   </div>
 </div>
+
+<br><br>
+<br><br>
+<br><br>
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+<!-- Grid container -->
+<div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+
+    <!-- Facebook -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+    <!-- Google -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+
+    <!-- Github -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+    </section>
+
+    <!-- Section: Social media -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-light bg-warning font-weight-bolb" href="https://www.youtube.com/watch?v=b-dfaJ1plvk">Mortal Kombat – Trailer Oficial</a>
+</div>
+<!-- Copyright -->
+</footer>
+
 <script src="../js/torneo.js"></script>
 <?php
     include_once('../recursos/footer.php');

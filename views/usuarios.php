@@ -26,8 +26,8 @@
   </div>
 </nav>
 
-<div class="container p-3">
-<table class="table table-dark animate__fadeIn">
+<div class="container p-5">
+<table class="table table-dark  table table-striped table-dark">
   <thead>
     <tr>
         <th scope="col">Nombre</th>
@@ -74,11 +74,70 @@
     </div>
   </div>
   <div class="float-right">
-    <button type="button" class="btn btn-outline-secondary" id="cancelarForm">Cancelar</button>
-    <button type="submit" class="btn btn-success" id="guardarForm">Guardar</button>
+    <button type="button" class="btn btn-outline-success text-dark font-weight-bold" id="cancelarForm">Cancelar</button>
+    <button type="submit" class="btn btn-warning text-dark font-weight-bold" id="guardarForm">Guardar</button>
   </div>
 </form>
 </div>
+
+<br><br>
+<br><br>
+<br><br>
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+<!-- Grid container -->
+<div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+
+    <!-- Facebook -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+    <!-- Google -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+
+    <!-- Github -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+    </section>
+
+    <!-- Section: Social media -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-light bg-warning font-weight-bolb" href="https://www.youtube.com/watch?v=b-dfaJ1plvk">Mortal Kombat – Trailer Oficial</a>
+</div>
+<!-- Copyright -->
+</footer>
 
 <script src="../js/user.js"></script>
 

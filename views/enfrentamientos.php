@@ -27,10 +27,12 @@
   </div>
 </nav>
 
+
 <div class="container text-light">
-    <div class="row">
+    
+    <div class="row p-5">
         <div class="col-md-5 bg-dark">
-            <form id="enfrentamiento-form" class="form-col">
+            <form id="enfrentamiento-form" class="form-col ">
             <h3>Información del enfrentamiento</h3>
             <input type="hidden" id="enfrentamientoId">
             <div>
@@ -42,7 +44,7 @@
                 <label class="my-1 mr-2" for="personaje">Personaje</label>
                     <select class="custom-select my-1 mr-sm-2" id="personaje">
                         <option>Seleccionar</option>
-                    </select>
+                </select>
             <div>
             </div>
             <div>
@@ -66,12 +68,13 @@
                     </select> 
             </div>
                 <div class="float-right">
-                <button type="submit" class="btn btn-success mb-2" id="guardar">Guardar</button>
+                <button type="submit" class="btn btn-warning m-md-3" id="guardar">Guardar</button>
+                <a class="btn btn-outline-warning font-weight-bold m-md-3" href="torneos.php">Regresar</a>
                 </div>
             </form>
         </div>
-        <div class="col-md-7">
-        <table class="table table-dark animate__fadeIn">
+        <div class="col-md-7 m-t-1">
+        <table class="table table-striped table-dark">
             <thead>
                 <tr>
                     <th scope="col">Jugador</th>
@@ -88,6 +91,62 @@
         </div>
     </div>
 </div>
+
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+<!-- Grid container -->
+<div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+
+    <!-- Facebook -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+    <!-- Twitter -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+    <!-- Google -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+    <!-- Instagram -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+    <!-- Linkedin -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+
+    <!-- Github -->
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+    </section>
+
+    <!-- Section: Social media -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-light bg-warning font-weight-bolb" href="https://www.youtube.com/watch?v=b-dfaJ1plvk">Mortal Kombat – Trailer Oficial</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
 <script src="../js/enfrentamiento.js"></script>
 <?php
     include_once('../recursos/footer.php');
