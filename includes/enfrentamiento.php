@@ -10,7 +10,7 @@
                 AND estado = 'a' AND tipo_usuario=2";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die("Falla en la consulta " . mysqli_error() );
+                    die("Falla en la consulta " . mysqli_error($conexion));
                 }
                 $json = array();
                 while ($row = mysqli_fetch_array($result)) {
@@ -27,7 +27,7 @@
                 $query = "SELECT * FROM resultado_combate";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die("Falla en la consulta " . mysqli_error());
+                    die("Falla en la consulta " . mysqli_error($conexion));
                 }
                 $json = array();
                 while ($row = mysqli_fetch_array($result)) {
@@ -51,7 +51,7 @@
                 WHERE partida = $id";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die("Falla en la consulta " . mysqli_error());
+                    die("Falla en la consulta " . mysqli_error($conexion));
                 }
                 $json = array();
                 while ($row = mysqli_fetch_array($result)) {
@@ -73,7 +73,7 @@
                 $query = "SELECT * FROM enfrentamientos WHERE id =$id";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die("Falla en la consulta " . mysqli_error());
+                    die("Falla en la consulta " . mysqli_error($conexion));
                 }
                 $json = array();
                 while ($row = mysqli_fetch_array($result)) {
@@ -102,7 +102,7 @@
                 VALUES($idPartida,$jugador,$personaje,$oponente,$ronda,$combate,'$resultado')";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die("Falla en la consulta " . mysqli_error());
+                    die("Falla en la consulta " . mysqli_error($conexion));
                 }
                 echo "Se ha guardo satisfactoriamente";
                 break;
@@ -119,7 +119,7 @@
                 WHERE id = $id";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die("Falla en la consulta " . mysqli_error());
+                    die("Falla en la consulta " . mysqli_error($conexion));
                 }
                 echo "Se ha actualizado el registro satisfactoriamente";
                 break;

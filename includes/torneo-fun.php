@@ -10,7 +10,7 @@
                 $query = "INSERT INTO partidas(nombre_evento,fecha_partida) VALUES('$nombre','$fecha')";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die ('Fallas en la consulta ' . mysqli_error());
+                    die ('Fallas en la consulta ' . mysqli_error($conexion));
                 }
                 echo "Se ha guardado satisfactoriamente";
                 break;
@@ -19,7 +19,7 @@
                 $query = "SELECT * FROM partidas WHERE idpartidas = $id";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die ('Fallas en la consulta ' . mysqli_error());
+                    die ('Fallas en la consulta ' . mysqli_error($conexion));
                 }
                 $json = array();
                 while ($row = mysqli_fetch_array($result)) {
@@ -40,7 +40,7 @@
                 $query = "UPDATE partidas SET nombre_evento='$nombre',fecha_partida='$fecha' WHERE idpartidas=$id";
                 $result = mysqli_query($conexion,$query);
                 if (!$result) {
-                    die ('Fallas en la consulta ' . mysqli_error());
+                    die ('Fallas en la consulta ' . mysqli_error($conexion));
                 }
                 echo "Registro actualizado correctamente";
                 break;

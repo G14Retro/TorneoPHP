@@ -17,8 +17,8 @@ if (isset($_POST['registrarse'])) {
 
     $result = mysqli_query($conexion,$query);
     if (!$result) {
-        echo $result;
-       die("Fallo el query");
+       header('Location: ../views/registro.php');
+       die();
     }
 
     $_SESSION['mensaje'] = 'Se ha registrado satisfactoriamente';
