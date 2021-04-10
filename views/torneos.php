@@ -110,7 +110,7 @@
 
     <!-- Github -->
     <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
+        href="https://github.com/G14Retro/TorneoPHP"
         role="button"
         data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
     </section>

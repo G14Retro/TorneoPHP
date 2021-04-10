@@ -10,11 +10,12 @@
                 <h4 class="informacion">Información de Registro</h4>
             </div>
             <div class="contenedor modal-content text-danger">
+            
                 <form class="col-12" action="../includes/registrar.php" method="POST" id="formRegistro">
                     <div class="row">
                         <div class="col">
                             <label class="form-label" form="tipo_documento">Tipo de Documento</label>
-                            <select id="tipo_documento" class="form-control" name="tipo_documento">
+                            <select id="tipo_documento" class="form-control" name="tipo_documento" required>
                                 <option >Seleccione una opción</option>
                                 <option value="cc">Cedula de Ciudadanía</option>
                                 <option value="ce">Cedula de Extrangería</option>
